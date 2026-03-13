@@ -1,0 +1,361 @@
+body{
+font-family: "Segoe UI", Arial, sans-serif;
+background:#f4f6f9;
+margin:0;
+padding-top:70px;
+color:#333;
+padding-top:70px;
+}
+
+/* Navbar */
+
+.navbar{
+transition:0.3s;
+}
+
+.navbar-brand{
+font-size:22px;
+letter-spacing:1px;
+}
+
+.nav-link{
+font-size:16px;
+margin-left:10px;
+transition:0.3s;
+}
+
+.nav-link:hover{
+color:#00c3ff !important;
+}
+
+/* Hero блок */
+
+.hero{
+height:420px;
+background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+url("https://images.unsplash.com/photo-1587202372775-a545dc96d5f5");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+}
+
+/* Контент */
+
+.container h1{
+font-weight:700;
+margin-bottom:20px;
+}
+
+.container p{
+font-size:17px;
+line-height:1.7;
+}
+
+/* Карточки */
+
+.card{
+border:none;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Таблицы */
+
+table{
+background:white;
+border-radius:10px;
+overflow:hidden;
+}
+
+th{
+background:#0d6efd;
+color:white;
+}
+
+/* Картинки */
+
+img{
+border-radius:10px;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Видео */
+
+.ratio{
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Кнопки */
+
+.btn{
+border-radius:25px;
+padding:10px 22px;
+}
+
+/* Список литературы */
+
+.list-group-item{
+font-size:17px;
+padding:14px;
+transition:0.3s;
+}
+
+.list-group-item:hover{
+background:#f0f7ff;
+cursor:pointer;
+}
+
+/* Поле поиска */
+
+input.form-control{
+border-radius:20px;
+padding:10px 15px;
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+background:#111;
+color:white;
+padding:25px;
+font-size:15px;
+}
+
+/* Адаптивность */
+
+@media(max-width:992px){
+
+.hero{
+height:350px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero{
+height:300px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.container p{
+font-size:16px;
+}
+
+}
+
+.hidden{
+opacity:0;
+transform:translateY(30px);
+transition:all 0.6s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.navbar-scrolled{
+padding-top:5px;
+padding-bottom:5px;
+transition:0.3s;
+}
+
+#scrollTopBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+display:none;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:50%;
+width:45px;
+height:45px;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+#scrollTopBtn:hover{
+background:#0b5ed7;
+}
+
+.float-img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Очистка обтекания после каждого блока с изображением */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Для мобильных устройств - отключаем обтекание */
+@media(max-width: 768px) {
+    .float-left, .float-right {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
+
+/* Контейнер для видео на всю ширину */
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Максимальная ширина для больших экранов */
+    margin: 0 auto 2rem; /* Центрирование и отступ снизу */
+    aspect-ratio: 16 / 9; /* Соотношение сторон 16:9 */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px; /* Скругленные углы */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении */
+.video:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Увеличение изображения при наведении */
+.video:hover img {
+    transform: scale(1.05);
+}
+
+/* Кнопка воспроизведения */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 0, 0, 0.9); /* Красный цвет YouTube */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Анимация кнопки при наведении */
+.video:hover .play-button {
+    background-color: #ff0000; /* Ярко-красный */
+    transform: translate(-50%, -50%) scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.6);
+}
+
+/* Затемнение фона при наведении */
+.video::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.video:hover::before {
+    opacity: 1;
+}
+
+/* Иконка в кнопке */
+.play-button svg {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px; /* Небольшой сдвиг для визуального центрирования */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .play-button svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Для очень больших экранов */
+@media (min-width: 1400px) {
+    .video {
+        max-width: 1400px;
+    }
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}

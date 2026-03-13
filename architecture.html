@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Архитектура материнских плат</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+/* Дополнительные стили для изображений с обтеканием */
+.float-img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin-bottom: 15px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Очистка обтекания после каждого блока с изображением */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Для мобильных устройств - отключаем обтекание */
+@media(max-width: 768px) {
+    .float-left, .float-right {
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+Материнские платы
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Главная</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="history.html">История</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="structure.html">Структура</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="architecture.html">Архитектура</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="3d-model.html">3Д-модель</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="os.html">Операционные системы</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="conclusions.html">Выводы</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="literature.html">Литература</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<div class="container mt-5 pt-5">
+
+<h1 class="mb-4">Архитектура материнских плат</h1>
+
+<!-- Первое изображение: Схема архитектуры - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://ic.pics.livejournal.com/m_i_kuznetsov/72909940/109593/109593_original.png"
+         alt="Схема архитектуры материнской платы">
+    
+    <p>
+    Архитектура материнской платы представляет собой структуру взаимодействия основных компонентов компьютера. 
+    Материнская плата объединяет центральный процессор, оперативную память, устройства хранения данных и периферийные интерфейсы. 
+    Она выполняет роль центральной системы обмена данными между всеми компонентами компьютера.
+    </p>
+    
+    <p>
+    Современные платформы построены вокруг сокетов для процессоров, таких как LGA и AM-серии. 
+    Сокет определяет тип поддерживаемого процессора и влияет на возможности всей системы. 
+    На материнской плате также располагается чипсет, который управляет подключением периферийных устройств и обеспечивает обмен данными между компонентами.
+    </p>
+</div>
+
+<h3 class="mt-4">Основные элементы архитектуры</h3>
+
+<p>
+Ключевыми элементами архитектуры материнской платы являются:
+</p>
+
+<ul class="list-group mb-4">
+
+<li class="list-group-item">
+Процессорный сокет — место установки центрального процессора.
+</li>
+
+<li class="list-group-item">
+Слоты оперативной памяти — используются для установки модулей RAM.
+</li>
+
+<li class="list-group-item">
+Чипсет — набор микросхем, управляющих обменом данными между устройствами.
+</li>
+
+<li class="list-group-item">
+Слоты расширения PCI Express — применяются для подключения видеокарт и других плат расширения.
+</li>
+
+<li class="list-group-item">
+Разъемы хранения данных — SATA и M.2 для подключения SSD и HDD.
+</li>
+
+<li class="list-group-item">
+Подсистема питания VRM — преобразует напряжение блока питания для стабильной работы процессора.
+</li>
+
+</ul>
+
+<!-- Второе изображение: PCI Express - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://www.malbred.com/images/pci-express-x16.jpg"
+         alt="Разъем PCI Express">
+    
+    <p>
+    Одним из важнейших компонентов архитектуры является шина PCI Express. 
+    Она обеспечивает высокоскоростную передачу данных между видеокартой, накопителями и другими устройствами. 
+    Современные версии PCI Express способны передавать данные со скоростью в десятки гигабайт в секунду.
+    </p>
+    
+    <p>
+    Шина PCI Express (Peripheral Component Interconnect Express) пришла на смену устаревшим стандартам PCI и AGP. 
+    Ее основное преимущество — последовательное соединение с выделенными линиями для каждого устройства, что позволяет 
+    одновременно передавать данные в обоих направлениях. Версии PCIe 4.0 и 5.0 предлагают пропускную способность до 
+    32 ГТ/с и выше, что критически важно для современных видеокарт и NVMe-накопителей.
+    </p>
+</div>
+
+<h3 class="mt-4">Подсистема питания</h3>
+
+<!-- Третье изображение: VRM - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://www.cryptoprofi.info/wp-content/uploads/2020/06/word-image-90.png.webp"
+         alt="Подсистема питания VRM">
+    
+    <p>
+    Подсистема питания материнской платы называется VRM (Voltage Regulator Module). 
+    Она состоит из нескольких фаз питания, которые преобразуют напряжение от блока питания в стабильное напряжение, необходимое для процессора и других компонентов.
+    Современные материнские платы используют многофазные схемы питания, что позволяет повысить стабильность работы системы и поддерживать высокопроизводительные процессоры.
+    </p>
+    
+    <p>
+    Качественная подсистема питания особенно важна при разгоне процессора. Мощные VRM с радиаторами охлаждения предотвращают перегрев и обеспечивают стабильное напряжение даже под экстремальными нагрузками. Количество фаз питания может варьироваться от 4-6 в бюджетных моделях до 16-20 в топовых материнских платах для энтузиастов.
+    </p>
+</div>
+
+<!-- Добавляем четвертое изображение для большей наглядности (чипсет) -->
+<h3 class="mt-4">Роль чипсета в архитектуре</h3>
+
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://media.ixbt.site/fit-in/422x600/https://www.ixbt.com/img/r30/00/02/49/74/diagram.jpg"
+         alt="Блок-схема архитектуры чипсета Intel Z690">
+    
+    <p>
+    Чипсет играет ключевую роль в архитектуре современной материнской платы. Он обеспечивает связь между процессором и периферийными устройствами: USB-портами, SATA-разъемами, сетевыми контроллерами и слотами расширения. В современных системах чипсет фактически выполняет функции южного моста, поскольку контроллер памяти и линии PCIe для видеокарты интегрированы непосредственно в процессор.
+    </p>
+    
+    <p>
+    Разные чипсеты предлагают различные возможности: количество линий PCIe, поддержку разгона, количество портов USB и SATA. Например, чипсеты Intel Z-серии (Z690, Z790) поддерживают разгон процессора и памяти, в то время как B-серии (B660, B760) предлагают базовый набор функций по более доступной цене. У AMD чипсеты X-серии (X570, X670) являются флагманскими, а B-серии (B550, B650) — массовыми.
+    </p>
+</div>
+
+<h3 class="mt-5">Видео о работе архитектуры материнской платы</h3>
+
+<div class="video youtube" data-id="-knefdASOz8" onclick="window.open('https://www.youtube.com/watch?v=-knefdASOz8', '_blank')">
+    <img 
+        src="https://img.youtube.com/vi/-knefdASOz8/maxresdefault.jpg"
+        alt="YouTube video preview"
+        class="video-preview"
+    >
+    <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="48">
+            <path fill="white" d="M8 5v14l11-7z"/>
+        </svg>
+    </div>
+</div>
+
+<div class="video youtube" data-id="wBNl7yOlez0" onclick="window.open('https://www.youtube.com/watch?v=wBNl7yOlez0', '_blank')">
+    <img 
+        src="https://img.youtube.com/vi/wBNl7yOlez0/maxresdefault.jpg"
+        alt="YouTube video preview"
+        class="video-preview"
+    >
+    <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="48">
+            <path fill="white" d="M8 5v14l11-7z"/>
+        </svg>
+    </div>
+</div>
+</div>
+
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+Информационный сайт о материнских платах
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

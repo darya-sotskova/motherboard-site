@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Структура материнской платы</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+<!-- Навигация (вставлена в тело, как в исходном коде) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="index.html">
+Материнские платы
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Главная</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="history.html">История</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="structure.html">Структура</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="architecture.html">Архитектура</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="3d-model.html">3Д-модель</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="os.html">Операционные системы</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="conclusions.html">Выводы</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="literature.html">Литература</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Основной контент -->
+<div class="container mt-4">
+
+<h1>Общая структура материнских плат: анатомия компьютера</h1>
+
+<!-- Исходное изображение (Unsplash) - делаем его с обтеканием справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea"
+         alt="структура платы">
+    
+    <p>
+    Материнская плата (англ. <em>motherboard</em>, также системная плата) представляет собой многослойную печатную плату, обеспечивающую электрическое соединение и взаимодействие между центральным процессором, оперативной памятью и всеми периферийными устройствами компьютера. По сути, это основа, на которой строится вся система. Визуально её легко узнать по разветвленной сети медных дорожек, множеству разъёмов и крупным микросхемам. Современные платы могут иметь до 10 и более слоёв, что позволяет разместить тысячи соединений на ограниченной площади, избегая помех и обеспечивая высокую скорость передачи данных.
+    </p>
+    
+    <p>
+    Несмотря на кажущуюся сложность, любая материнская плата строится вокруг нескольких ключевых компонентов. Понимание их назначения и расположения помогает не только самостоятельно собрать компьютер, но и грамотно подобрать комплектующие для апгрейда. Ниже мы подробно рассмотрим каждый из этих элементов, сопровождая описание наглядными примерами из реальных моделей.
+    </p>
+</div>
+
+<!-- Начало детального описания с новыми изображениями -->
+
+<h2 class="mt-5">1. Процессорный сокет (CPU Socket)</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 1: Сокет LGA 1700 - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://3dnews.ru/assets/external/illustrations/2021/12/08/1055509/Krivoj_LGA1700_01.jpg"
+         alt="Процессорный сокет LGA 1700 крупным планом">
+    
+    <p>
+    <strong>Процессорный сокет</strong> — это гнездо для установки центрального процессора (ЦП). Это один из самых важных элементов, определяющий совместимость платы с конкретными моделями CPU. Существует два основных типа сокетов: <strong>LGA</strong> (Land Grid Array), где контакты (пины) находятся в самом сокете, а процессор имеет плоские площадки (используется Intel и в серверных решениях AMD), и <strong>PGA</strong> (Pin Grid Array), где контакты расположены на самом процессоре (традиционно используется в массовых процессорах AMD, например, AM4). Современные сокеты, такие как Intel LGA 1700 или AMD AM5 (на фото выше пример LGA), рассчитаны на сотни циклов установки и обеспечивают питание по нескольким сотням контактов одновременно.
+    </p>
+</div>
+
+<h2 class="mt-5">2. Слоты оперативной памяти (DIMM слоты)</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 2: Слоты DDR4 - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://thumbs.dreamstime.com/b/%D1%81%D0%BB%D0%BE%D1%82%D0%B0-%D0%B4%D0%BB%D1%8F-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B5%D0%B9-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9-%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D0%B8-ddr-%D0%BD%D0%B0-%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B9-%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B9-206949664.jpg"
+         alt="Слоты оперативной памяти DDR4">
+    
+    <p>
+    Рядом с процессором расположены <strong>слоты DIMM</strong> (Dual In-line Memory Module), предназначенные для установки модулей оперативной памяти. Чаще всего платы имеют 2 или 4 слота. Чтобы обеспечить максимальную производительность в современных процессорах с двухканальным (и более) контроллером памяти, модули рекомендуется устанавливать парами в определенные слоты (обычно они маркируются цветом, как на фото выше). Форм-фактор памяти для настольных ПК — DIMM, для ноутбуков — SO-DIMM. Ключевое различие между поколениями DDR (DDR3, DDR4, DDR5) — в расположении ключа (выреза), что делает их физически несовместимыми между собой.
+    </p>
+</div>
+
+<h2 class="mt-5">3. Чипсет (Chipset)</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 3: Чипсет Z690 - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://www.ittelo.ru/upload/cssinliner_webp/iblock/3b2/c4ad158836335ff58177d8a2e765156f.webp"
+         alt="Чипсет материнской платы Z690 без радиатора">
+    
+    <p>
+    <strong>Чипсет</strong> (или набор системной логики) — это одна или несколько микросхем, которые связывают процессор с остальными компонентами: накопителями, картами расширения, USB-портами. Раньше чипсет состоял из двух частей: северного моста (отвечал за связь с памятью и видеокартой) и южного (отвечал за периферию). В современных процессорах (Intel Core и AMD Ryzen) контроллер памяти и линии PCIe для видеокарты встроены прямо в CPU, поэтому чипсет (например, Intel Z690 или AMD B650, на фото выше показан чипсет Z690) выполняет функции, схожие с южным мостом: обеспечивает работу дополнительных портов USB, SATA, сетевых контроллеров и возможность разгона.
+    </p>
+</div>
+
+<h2 class="mt-5">4. Слоты расширения PCI Express</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 4: Слоты PCIe - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://userello.ru/wp-content/uploads/2018/06/40-02-1.jpg"
+         alt="Слоты PCI Express x16 и x1 на плате">
+    
+    <p>
+    <strong>Слоты PCI Express</strong> (PCIe) пришли на смену старым шинам PCI и AGP. Это высокоскоростные последовательные интерфейсы для подключения видеокарт, твердотельных накопителей (NVMe), звуковых карт и других устройств. Главный слот, предназначенный для видеокарты — это <strong>PCIe x16</strong> (самый длинный, как правило, ближайший к процессору). Он имеет 16 линий передачи данных. Также на плате присутствуют слоты <strong>PCIe x1</strong> или <strong>x4</strong> (более короткие) для дополнительных контроллеров. Версии PCIe (3.0, 4.0, 5.0) обратно совместимы, но скорость определяется самой медленной версией устройства или слота.
+    </p>
+</div>
+
+<h2 class="mt-5">5. Разъемы для накопителей: SATA и M.2</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 5: Разъемы SATA - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://otvet.imgsmail.ru/download/79455687_d1370cbe0e4716cc4ee2050d5db2d815_800.jpg"
+         alt="Разъемы SATA на материнской плате">
+    
+    <p>
+    Для подключения жестких дисков (HDD) и твердотельных накопителей (SSD) традиционного 2.5-дюймового формата служат <strong>разъемы SATA</strong> (Serial ATA). Они обычно расположены группой сбоку платы (как на фото выше). Современная версия SATA 3.0 обеспечивает пропускную способность до 6 Гбит/с. Однако для скоростных NVMe SSD используется более компактный и быстрый разъем <strong>M.2</strong>. Он выглядит как небольшой горизонтальный порт и может работать как через интерфейс SATA, так и через шину PCIe, обеспечивая скорость в несколько раз выше, чем SATA.
+    </p>
+</div>
+
+<!-- ИЗОБРАЖЕНИЕ 6: Разъем M.2 - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://selectel.ru/blog/wp-content/uploads/2022/06/%D1%8C2.png"
+         alt="Разъем M.2 с установленным твердотельным накопителем">
+    
+    <p>
+    Разъем M.2 стал стандартом для современных высокоскоростных накопителей. Он поддерживает как SATA, так и NVMe протоколы через шину PCIe. На изображении показан установленный SSD в слот M.2. Такие накопители обеспечивают скорость чтения/записи до 7000 МБ/с и выше, что в десятки раз быстрее традиционных жестких дисков и значительно быстрее SATA SSD.
+    </p>
+</div>
+
+<h2 class="mt-5">6. Разъемы блока питания (ATX Power)</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 7: 24-пиновый разъем питания - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://static.nix.ru/art/pic/web_news/2016/jul/ps1467991176.jpg"
+         alt="24-контактный разъем питания ATX на материнской плате">
+    
+    <p>
+    Для подачи питания от блока на материнскую плату используется основной <strong>24-контактный разъем ATX</strong> (на фото выше). Он обеспечивает энергией саму плату, слоты расширения и периферию. Однако процессор потребляет больше всего энергии и требует отдельного питания. Для этого рядом с процессорным сокетом расположен <strong>4+4 pin (или 8 pin) разъем EPS12V</strong>. Для мощных видеокарт питание подается напрямую от блока, но плата также распределяет питание по слоту PCIe.
+    </p>
+</div>
+
+<h2 class="mt-5">7. Задняя панель (I/O Shield) и внутренние коннекторы</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 8: Задняя панель - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://2hpc.ru/wp-content/uploads/2018/01/matherboard-8.jpg"
+         alt="Задняя панель материнской платы с портами USB, аудио и Ethernet">
+    
+    <p>
+    На задней панели (<strong>I/O Panel</strong>) выведены все порты для подключения внешних устройств: USB (разных версий и цветов), PS/2 для клавиатуры/мыши, сетевой порт RJ45 (Ethernet), аудиоразъемы (Jack 3.5 мм), а также видеовыходы (HDMI, DisplayPort), если в процессоре есть встроенное видео. Внутри корпуса также имеются колодки для подключения кнопок передней панели, USB-портов на корпусе и аудиовыходов на передней панели.
+    </p>
+</div>
+
+<h2 class="mt-5">8. Подсистема питания (VRM) и охлаждение</h2>
+
+<!-- ИЗОБРАЖЕНИЕ 9: VRM с радиаторами - обтекание слева -->
+<div class="clearfix mb-4">
+    <img class="float-img float-left"
+         src="https://www.smart.md/image/cache/data/results-photos/article2/the-importance-of-vrm-cooling-solutions-in-overclocking-pc-motherboards-1280x600.jpg"
+         alt="Подсистема питания VRM материнской платы с радиаторами">
+    
+    <p>
+    Вокруг процессорного сокета расположены элементы <strong>VRM</strong> (Voltage Regulator Module) — модули стабилизации напряжения. Они преобразуют входящее напряжение (12 В) в низкое напряжение для ядер процессора (около 1.2–1.4 В). Качественный VRM с мощными мосфетами, дросселями и конденсаторами — залог стабильной работы мощного процессора и успешного разгона. На дорогих платах эти элементы закрыты массивными радиаторами для отвода тепла, так как при высоких нагрузках они могут сильно нагреваться.
+    </p>
+</div>
+
+<!-- ИЗОБРАЖЕНИЕ 10: Аудиотракт - обтекание справа -->
+<div class="clearfix mb-4">
+    <img class="float-img float-right"
+         src="https://ichip.ru/images/cache/2020/8/19/fit_960_461_false_crop_982_472_0_0_q90_427842_e13bbe9fbb24e90a27f89c3da.jpeg"
+         alt="Выделенный аудиотракт на материнской плате">
+    
+    <p>
+    Многие современные материнские платы также имеют выделенный <strong>аудиотракт</strong> (обычно в левом нижнем углу). Производители изолируют его от остальной платы (чтобы снизить электрические помехи) и используют специальные аудиоконденсаторы. Звуковой кодек (например, Realtek ALC1220 или ALC4080) обрабатывает цифровой звук, а качественная обвязка обеспечивает чистое звучание в наушниках и акустических системах.
+    </p>
+</div>
+
+<ul class="mt-4 list-group">
+<li class="list-group-item"><strong>Процессорный сокет</strong> — место установки CPU.</li>
+<li class="list-group-item"><strong>Слоты оперативной памяти DIMM</strong> — для модулей RAM.</li>
+<li class="list-group-item"><strong>Чипсет</strong> — управляет периферией и связью.</li>
+<li class="list-group-item"><strong>Слоты расширения PCI Express</strong> — для видеокарт и других устройств.</li>
+<li class="list-group-item"><strong>Разъемы SATA и M.2</strong> — для подключения накопителей.</li>
+<li class="list-group-item"><strong>Разъемы питания (24 pin + 8 pin)</strong> — подача энергии.</li>
+<li class="list-group-item"><strong>Задняя панель I/O</strong> — порты для внешних устройств.</li>
+<li class="list-group-item"><strong>VRM и система охлаждения</strong> — стабилизация питания и отвод тепла.</li>
+</ul>
+
+<p class="mt-4">
+Структура материнской платы постоянно усложняется, но базовые принципы, заложенные еще в 80-х годах, остаются неизменными: обеспечить надежную связь между вычислительным ядром и периферией. При выборе платы важно обращать внимание на форм-фактор (ATX, Micro-ATX, Mini-ITX), который определяет размеры корпуса и количество слотов расширения.
+</p>
+
+<!-- Добавленные видео для более полного понимания -->
+
+<h3 class="mt-5">Видео: детальный разбор компонентов материнской платы</h3>
+
+<div class="video youtube" data-id="IC-bG4D8pvs" onclick="window.open('https://www.youtube.com/watch?v=IC-bG4D8pvs', '_blank')">
+    <img 
+        src="https://img.youtube.com/vi/IC-bG4D8pvs/maxresdefault.jpg"
+        alt="YouTube video preview"
+        class="video-preview"
+    >
+    <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="48">
+            <path fill="white" d="M8 5v14l11-7z"/>
+        </svg>
+    </div>
+</div>
+
+<h3 class="mt-4">Видео: процесс сборки ПК с акцентом на подключение к материнской плате</h3>
+<div class="video youtube" data-id="0EoZ55otT8I" onclick="window.open('https://www.youtube.com/watch?v=0EoZ55otT8I', '_blank')">
+    <img 
+        src="https://img.youtube.com/vi/0EoZ55otT8I/maxresdefault.jpg"
+        alt="YouTube video preview"
+        class="video-preview"
+    >
+    <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="48">
+            <path fill="white" d="M8 5v14l11-7z"/>
+        </svg>
+    </div>
+</div>
+<!-- Оригинальное видео (оставлено для соответствия исходному коду) -->
+<h3 class="mt-4">Базовое видео о структуре</h3>
+<div class="video youtube" data-id="DVR3amE9BJc" onclick="window.open('https://www.youtube.com/watch?v=DVR3amE9BJc', '_blank')">
+    <img 
+        src="https://img.youtube.com/vi/DVR3amE9BJc/maxresdefault.jpg"
+        alt="YouTube video preview"
+        class="video-preview"
+    >
+    <div class="play-button">
+        <svg viewBox="0 0 24 24" width="48" height="48">
+            <path fill="white" d="M8 5v14l11-7z"/>
+        </svg>
+    </div>
+</div>
+
+<!-- Скрипт Bootstrap (в исходном коде его не было, но для работы навигации он нужен, добавим его стандартно) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Дополнительный скрипт для плавного скролла (из style.css есть упоминание классов hidden/show, но js не было. Оставим без изменений) -->
+
+</body>
+</html>
