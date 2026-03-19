@@ -2,287 +2,266 @@
 <html lang="ru">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Перспективы развития материнских плат</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-<title>Операционные системы</title>
+    <style>
+        /* Дополнительные стили для изображений с обтеканием */
+        .float-img {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+            margin-bottom: 15px;
+        }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
+        .float-left {
+            float: left;
+            margin-right: 20px;
+        }
 
-<style>
-/* Дополнительные стили для изображений с обтеканием */
-.float-img {
-    width: 500px;
-    height: 400px;
-    object-fit: cover; /* Сохраняет пропорции, обрезая лишнее */
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    margin-bottom: 15px;
-}
+        .float-right {
+            float: right;
+            margin-left: 20px;
+        }
 
-.float-left {
-    float: left;
-    margin-right: 20px;
-}
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-.float-right {
-    float: right;
-    margin-left: 20px;
-}
+        @media(max-width: 768px) {
+            .float-left, .float-right {
+                float: none;
+                margin: 0 auto 20px auto;
+                display: block;
+            }
+        }
 
-/* Очистка обтекания после каждого блока с изображением */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+        .table-responsive {
+            margin: 2rem 0;
+        }
 
-/* Для мобильных устройств - отключаем обтекание */
-@media(max-width: 768px) {
-    .float-left, .float-right {
-        float: none;
-        margin: 0 auto 20px auto;
-        display: block;
-    }
-}
-</style>
+        .table thead th {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+        }
 
+        h3 {
+            color: #0d6efd;
+            margin-top: 2.5rem;
+        }
+    </style>
 </head>
 
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            Материнские платы
+        </a>
 
-<div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<a class="navbar-brand fw-bold" href="index.html">
-Материнские платы
-</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarMenu">
-
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Главная</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link " href="history.html">История</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="structure.html">Структура</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="architecture.html">Архитектура</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="3d-model.html">3Д-модель</a>
-</li>
-<li class="nav-item">
-<a class="nav-link active" href="os.html">Операционные системы</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="conclusions.html">Выводы</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="literature.html">Литература</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
-
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">История</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="structure.html">Структура</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="architecture.html">Архитектура</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="3d-model.html">3Д-модель</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="os.html">Перспективы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conclusions.html">Выводы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="literature.html">Литература</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 
 <div class="container mt-5 pt-5">
 
-<h1 class="mb-4">Операционные системы и их взаимодействие с аппаратным обеспечением</h1>
+    <h1 class="mb-4">Перспективные направления развития материнских плат</h1>
 
-<!-- Первое изображение: Схема работы ОС - обтекание справа -->
-<div class="clearfix mb-4">
-    <img class="float-img float-right"
-         src="https://intuit.ru/EDI/22_02_19_2/1550787571-32127/tutorial/901/objects/1/files/1_1.png"
-         alt="Схема работы операционной системы">
-    
-    <p>
-    Операционная система представляет собой программное обеспечение, которое управляет аппаратными ресурсами компьютера и обеспечивает взаимодействие пользователя с устройством. 
-    Она выступает посредником между программами и аппаратной частью компьютера, включая процессор, оперативную память, устройства хранения данных и периферийное оборудование.
-    </p>
-    
-    <p>
-    Материнская плата играет ключевую роль в работе операционной системы, так как через неё осуществляется взаимодействие всех компонентов системы. 
-    Операционная система использует драйверы устройств, чтобы получать доступ к возможностям аппаратного обеспечения. 
-    Без операционной системы пользователь не смог бы запускать приложения, управлять файлами или взаимодействовать с устройствами ввода и вывода.
-    </p>
-</div>
+    <!-- Первое изображение: концепт будущей материнской платы -->
+    <div class="clearfix mb-5">
+        <img class="float-img float-right"
+             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+             alt="Концепт современной материнской платы будущего">
 
-<h3 class="mt-4">Основные функции операционной системы</h3>
+        <p>
+            Развитие материнских плат в период 2026–2032 годов определяется необходимостью соответствия экспоненциально растущим требованиям к пропускной способности шин, энергоэффективности, интеграции специализированных ускорителей и ужесточению экологических стандартов. 
+            Основные векторы эволюции связаны с переходом на новые поколения высокоскоростных интерфейсов, изменением архитектуры подсистемы питания и появлением аппаратных блоков для задач искусственного интеллекта.
+        </p>
 
-<ul class="list-group mb-4">
-
-<li class="list-group-item">Управление процессами и распределение ресурсов процессора</li>
-<li class="list-group-item">Управление оперативной памятью</li>
-<li class="list-group-item">Работа с файловой системой</li>
-<li class="list-group-item">Управление устройствами ввода и вывода</li>
-<li class="list-group-item">Обеспечение безопасности и контроля доступа</li>
-
-</ul>
-
-<!-- Второе изображение: Windows 11 - обтекание слева -->
-<div class="clearfix mb-4">
-    <img class="float-img float-left"
-         src="https://img.championat.com/c/1350x759/news/big/e/j/windows-11-oficialno-vyshla-gde-skachat-besplatno-i-kak-ustanovit_1633536660865715773.jpg"
-         alt="Интерфейс Windows 11">
-    
-    <h3>Операционная система Windows</h3>
-    
-    <p>
-    Windows является самой распространенной операционной системой для персональных компьютеров. 
-    Она разработана компанией Microsoft и используется миллионами пользователей по всему миру. Современные версии, такие как Windows 11, предлагают обновленный интерфейс, улучшенную производительность и расширенные возможности безопасности.
-    </p>
-    
-    <p>
-    Главным преимуществом Windows является высокая совместимость с различным аппаратным обеспечением и программным обеспечением. 
-    Большинство производителей устройств разрабатывают драйверы именно для Windows, что делает систему удобной для использования в домашних и офисных компьютерах.
-    </p>
-    
-    <p>
-    Современные версии Windows поддерживают новейшие процессоры, графические карты, интерфейсы хранения данных и технологии безопасности. 
-    Операционная система активно используется в игровых компьютерах, рабочих станциях и корпоративных системах. DirectX 12 Ultimate и интеграция с облачными сервисами делают Windows привлекательной платформой для геймеров и профессионалов.
-    </p>
-</div>
-
-<!-- Третье изображение: Логотип Linux - обтекание справа -->
-<div class="clearfix mb-4">
-    <img class="float-img float-right"
-         src="https://timeweb.com/ru/community/article/f0/f0444421e294b9c85f50c2164f2bd27f.jpg"
-         alt="Логотип Linux">
-    
-    <h3>Операционная система Linux</h3>
-    
-    <p>
-    Linux представляет собой семейство операционных систем с открытым исходным кодом. 
-    Ядро Linux было создано Линусом Торвальдсом в 1991 году и с тех пор активно развивается международным сообществом разработчиков.
-    </p>
-    
-    <p>
-    Linux широко используется в серверных системах, суперкомпьютерах и сетевой инфраструктуре. 
-    Благодаря своей гибкости и высокой надежности система стала основой для многих популярных дистрибутивов, таких как Ubuntu, Debian, Fedora и Arch Linux.
-    </p>
-    
-    <p>
-    Операционная система Linux поддерживает огромное количество аппаратных платформ и архитектур. 
-    Она может работать на персональных компьютерах, серверах, мобильных устройствах и даже встроенных системах. 
-    В сообществе Linux активно развиваются драйверы для нового оборудования, а открытый исходный код позволяет адаптировать систему под любые задачи.
-    </p>
-</div>
-
-<!-- Четвертое изображение: Логотип macOS - обтекание слева -->
-<div class="clearfix mb-4">
-    <img class="float-img float-left"
-         src="https://img.icons8.com/color/1200/mac-logo.jpg"
-         alt="Логотип macOS">
-    
-    <h3>Операционная система macOS</h3>
-    
-    <p>
-    macOS является операционной системой, разработанной компанией Apple для компьютеров Mac. 
-    Она основана на ядре Darwin и сочетает в себе элементы UNIX-подобных систем. macOS известна своей элегантностью, интуитивно понятным интерфейсом и высокой степенью безопасности.
-    </p>
-    
-    <p>
-    macOS отличается высокой стабильностью, удобным пользовательским интерфейсом и тесной интеграцией с аппаратным обеспечением Apple. 
-    Это позволяет добиться высокой производительности и оптимизации системы. Благодаря глубокой интеграции "железа" и "софта", macOS обеспечивает плавную работу даже на устройствах с меньшими техническими характеристиками по сравнению с конкурентами.
-    </p>
-    
-    <p>
-    Операционная система широко используется в сфере дизайна, разработки программного обеспечения и мультимедийного производства. 
-    Профессиональные приложения, такие как Final Cut Pro, Logic Pro и вся линейка Creative Cloud от Adobe, отлично оптимизированы под macOS, что делает ее выбором многих креативных специалистов.
-    </p>
-</div>
-
-<!-- Добавляем пятое изображение для сравнения дистрибутивов -->
-<div class="clearfix mb-4">
-    <img class="float-img float-right"
-         src="https://ablex.ru/wp-content/uploads/2015/09/Linux_distros.png"
-         alt="Сравнение дистрибутивов Linux">
-    
-    <h3>Многообразие операционных систем</h3>
-    
-    <p>
-    Помимо трех основных систем, существуют десятки других операционных систем и дистрибутивов, специализированных под конкретные задачи. Например, Chrome OS от Google ориентирована на работу в облаке, FreeBSD используется в серверных решениях, а ReactOS пытается обеспечить совместимость с Windows-приложениями с открытым исходным кодом.
-    </p>
-    
-    <p>
-    Выбор операционной системы зависит от поставленных задач, аппаратной платформы и предпочтений пользователя. Независимо от выбора, любая ОС взаимодействует с материнской платой через драйверы и системные вызовы, обеспечивая доступ к процессору, памяти и периферийным устройствам. Понимание этого взаимодействия помогает лучше настраивать систему и решать проблемы совместимости оборудования.
-    </p>
-</div>
-
-<h3 class="mt-5">Видео об операционных системах</h3>
-
-<div class="video youtube" data-id="PnGZwqO4hRU" onclick="window.open('https://www.youtube.com/watch?v=PnGZwqO4hRU', '_blank')">
-    <img 
-        src="https://img.youtube.com/vi/PnGZwqO4hRU/maxresdefault.jpg"
-        alt="YouTube video preview"
-        class="video-preview"
-    >
-    <div class="play-button">
-        <svg viewBox="0 0 24 24" width="48" height="48">
-            <path fill="white" d="M8 5v14l11-7z"/>
-        </svg>
+        <p>
+            К 2028–2030 годам ожидается массовое внедрение стандарта PCIe 6.0 с пропускной способностью 64 ГТ/с на линию при использовании модуляции PAM4. 
+            Это удваивает скорость передачи данных по сравнению с PCIe 5.0 без увеличения количества физических линий. 
+            Для реализации данного стандарта потребуется переработка топологии печатной платы, применение диэлектриков с низкими потерями и более строгая трассировка сигнальных путей.
+        </p>
     </div>
-</div>
 
-<div class="video youtube" data-id="adcijRTI_8E" onclick="window.open('https://www.youtube.com/watch?v=adcijRTI_8E', '_blank')">
-    <img 
-        src="https://img.youtube.com/vi/adcijRTI_8E/maxresdefault.jpg"
-        alt="YouTube video preview"
-        class="video-preview"
-    >
-    <div class="play-button">
-        <svg viewBox="0 0 24 24" width="48" height="48">
-            <path fill="white" d="M8 5v14l11-7z"/>
-        </svg>
-    </div>
-</div>
+    <h3 class="mt-5">Эволюция интерфейсов и памяти</h3>
 
-<div class="video youtube" data-id="hb9CTGSJm88" onclick="window.open('https://www.youtube.com/watch?v=hb9CTGSJm88', '_blank')">
-    <img 
-        src="https://img.youtube.com/vi/hb9CTGSJm88/maxresdefault.jpg"
-        alt="YouTube video preview"
-        class="video-preview"
-    >
-    <div class="play-button">
-        <svg viewBox="0 0 24 24" width="48" height="48">
-            <path fill="white" d="M8 5v14l11-7z"/>
-        </svg>
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Интерфейс</th>
+                    <th>2026 год</th>
+                    <th>2028–2030 годы (прогноз)</th>
+                    <th>2032+ годы (прогноз)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PCIe</td>
+                    <td>5.0 (32 ГТ/с)</td>
+                    <td>6.0 (64 ГТ/с)</td>
+                    <td>7.0 (128 ГТ/с)</td>
+                </tr>
+                <tr>
+                    <td>Оперативная память</td>
+                    <td>DDR5 8000–9600+ МГц</td>
+                    <td>DDR6 17600+ МГц</td>
+                    <td>DDR7 / LPDDR6X</td>
+                </tr>
+                <tr>
+                    <td>Встроенный Ethernet</td>
+                    <td>2,5–5 Гбит/с</td>
+                    <td>10–25 Гбит/с</td>
+                    <td>50–100 Гбит/с</td>
+                </tr>
+                <tr>
+                    <td>Wi-Fi</td>
+                    <td>Wi-Fi 7 (46 Гбит/с макс.)</td>
+                    <td>Wi-Fi 8 (100+ Гбит/с)</td>
+                    <td>Wi-Fi 9 / 802.11bn</td>
+                </tr>
+                <tr>
+                    <td>USB</td>
+                    <td>USB4 40 Гбит/с</td>
+                    <td>USB4 v2 80 Гбит/с</td>
+                    <td>USB5 160+ Гбит/с</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</div>
+
+    <!-- Второе изображение: концепт системы охлаждения -->
+    <div class="clearfix mb-5">
+        <img class="float-img float-left"
+             src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+             alt="Система охлаждения высокопроизводительной материнской платы">
+
+        <p>
+            Подсистема питания процессора претерпевает наиболее радикальные изменения. 
+            Если в 2026 году типичная конфигурация включает 20–24 фазы с силовыми элементами на 90–110 А, то к 2030 году прогнозируется переход к 32–48-фазным схемам с использованием транзисторов на основе нитрида галлия GaN и карбида кремния SiC.
+        </p>
+
+        <p>
+            Такие компоненты позволяют снизить потери на преобразование на 15–25 %, повысить КПД до 96–98 % и обеспечить стабильную работу процессоров с TDP 300–450 Вт в массовом сегменте. 
+            Одновременно внедряется полностью цифровое управление питанием с адаптивной обратной связью по току, напряжению и температуре в реальном времени.
+        </p>
+    </div>
+
+    <h3 class="mt-5">Интеграция ускорителей ИИ и экологические требования</h3>
+
+    <p>
+        Растущая роль искусственного интеллекта приводит к появлению на материнских платах специализированных разъёмов и слотов под AI-акселераторы. 
+        Уже в 2027–2029 годах ожидается массовое внедрение M.2 / M.3 слотов формата AI Module с поддержкой интерфейсов CXL 3.0–4.0 и NVLink-подобных соединений для объединения нескольких ускорителей в единую когерентную систему.
+    </p>
+
+    <p>
+        Экологические требования становятся обязательной частью проектирования. 
+        Производители переходят на полностью бессвинцовые припои, увеличивают долю переработанных материалов в конструкции платы до 30–40 %, снижают энергопотребление в режиме простоя и обеспечивают соответствие стандартам Energy Star 8.0 и EU Ecodesign 2027+.
+    </p>
+
+    <div class="table-responsive mt-5">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Параметр</th>
+                    <th>2026 год</th>
+                    <th>2030 год (прогноз)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Количество фаз VRM</td>
+                    <td>20–24</td>
+                    <td>32–48+</td>
+                </tr>
+                <tr>
+                    <td>Тип силовых элементов</td>
+                    <td>Si MOSFET 90–110 А</td>
+                    <td>GaN / SiC 150–200+ А</td>
+                </tr>
+                <tr>
+                    <td>Напряжение ядра CPU</td>
+                    <td>0,8–1,4 В</td>
+                    <td>0,6–1,2 В</td>
+                </tr>
+                <tr>
+                    <td>TDP массовых процессоров</td>
+                    <td>170–230 Вт</td>
+                    <td>250–450 Вт</td>
+                </tr>
+                <tr>
+                    <td>Охлаждение VRM</td>
+                    <td>Пассивное + теплотрубки</td>
+                    <td>Активное / жидкостное опционально</td>
+                </tr>
+                <tr>
+                    <td>Доля переработанных материалов</td>
+                    <td>5–15 %</td>
+                    <td>30–50 %</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="mt-5">
+        Таким образом, перспективы развития материнских плат определяются синхронным ростом скоростей интерфейсов, энергоэффективности, интеграции аппаратных ускорителей ИИ и ужесточением экологических требований. 
+        Переход к PCIe 6.0/7.0, DDR6, GaN/SiC-компонентам питания и специализированным AI-модулям потребует существенной переработки конструкции печатной платы, повышения качества материалов и оптимизации теплового режима. 
+        Эти изменения обеспечат соответствие материнских плат требованиям вычислительных систем следующего поколения, включая задачи генеративного ИИ, высокопроизводительных вычислений и облачных сервисов.
+    </p>
 
 </div>
 
 
 <footer class="bg-dark text-white text-center p-3 mt-5">
-Информационный сайт о материнских платах
+    Информационный сайт о материнских платах
 </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.5.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
